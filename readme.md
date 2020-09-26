@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <h2 align="center"> Web application using redux & react to create a online store</h2>    
+    <h2 align="center"> Web application using redux & react to create a online store develop branch</h2>    
 </p>
 
 <p align="center">
