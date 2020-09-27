@@ -1,0 +1,10 @@
+.wrapper {
+  background-color: crimson;
+  padding: 0;
+  min-height: 12vh;
+  max-height: 100px;
+}
+
+.contentWrapper {
+  background-color: darkgoldenrod;
+}
