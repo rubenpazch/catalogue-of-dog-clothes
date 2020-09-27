@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+}
+
+.mainWrapper {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.contentWrapper {
+  background-color: yellow;
+  min-height: 100vh;
+  padding: 0;
+}
