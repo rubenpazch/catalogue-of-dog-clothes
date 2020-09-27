@@ -11,13 +11,16 @@ function MenuNotificationBar() {
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-						<a href="#">Home</a>
+						<a href="#">Most Populars Places</a>
 					</li>
           <li href="#features" className={styles.itemList}>
-						<a href="#"> Features</a>
+						<a href="#"> Last Time Trip</a>
 					</li>
           <li href="#pricing" className={styles.itemList}>
-            <a href="#">Pricing</a>
+            <a href="#">Flexible Itinerary</a>
+          </li>
+					<li href="#pricing" className={styles.itemList}>
+            <a href="#">Deals</a>
           </li>
         </ul>
       </Col>
