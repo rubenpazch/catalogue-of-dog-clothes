@@ -1,10 +1,11 @@
 .wrapper {
-  background-color: blue;
   padding: 0;
   min-height: 7vh;
-  max-height: 40px;
+	max-height: 40px;
+	background-color: rgb(68, 0, 85);
+	color: #fff;
 }
 
 .contentWrapper {
-  background-color: coral;
+  background-color: rgb(68, 0, 85);
 }
