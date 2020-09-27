@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  color: #000;
+  color: rgba(68, 0, 85, 1);
 }
 
 .leftwrapper {
@@ -36,11 +36,36 @@
   display: flex;
   flex-flow: row;
   list-style: none;
-  justify-self: center;
+	justify-self: center;
+	margin: 0;
+}
+
+.wrapperMenu li {
+  font-size: 0.9em;
+  border-right: 1px solid #fff;
+  font-family: TitilliumExtraLight, sans-serif, serif;
+  letter-spacing: 1px;
+  padding: 0 15px 0 15px;
+}
+
+.wrapperMenu li:last-child {
+  border-right: 0;
+}
+
+.wrapperMenu a {
+  color: rgba(68, 0, 85, 1);
+  white-space: nowrap;
+}
+
+.wrapperMenu a:hover {
+  color: rgba(68, 0, 85, 1);
+  white-space: nowrap;
+  font-family: TitilliumBold, sans-serif, serif;
+  text-decoration: none;
 }
 
 .itemList {
-  color: rgba(0, 0, 0, 1);
+  color: #fff;
   padding-right: 30px;
   padding-left: 30px;
   text-transform: uppercase;
