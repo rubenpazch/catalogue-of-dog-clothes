@@ -13,9 +13,9 @@ function App() {
     <Container fluid className={styles.mainWrapper}>
       <Notifications />
       <NavBar />
-			<Slider />
+      <Slider />
       <Container className={styles.contentWrapper}>
-        
+
         <h1>titleasdasd</h1>
       </Container>
     </Container>
