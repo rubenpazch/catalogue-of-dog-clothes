@@ -1,0 +1,17 @@
+.wrapper {
+	background-color: rgb(255 221 85);
+	border: 1px solid rgb(255 221 85);
+	height: 140px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper img{
+	width: auto;
+	height: 190px;
+	position: relative;
+	top: -52px;
+	bottom: 0;
+}
