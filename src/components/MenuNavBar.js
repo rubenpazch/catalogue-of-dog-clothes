@@ -14,10 +14,16 @@ function MenuNavBar() {
 						<a  href="#">Home</a>
 					</li>
           <li href="#features" className={styles.itemList}>
-						<a  href="#"> Features</a>
+						<a  href="#"> ADVENTURES</a>
 					</li>
           <li href="#pricing" className={styles.itemList}>
-            <a  href="#">Pricing</a>
+            <a  href="#">MUSEUMS</a>
+          </li>
+					<li href="#pricing" className={styles.itemList}>
+            <a  href="#">LUXURY</a>
+          </li>
+					<li href="#pricing" className={styles.itemList}>
+            <a  href="#">TRADITIONAL</a>
           </li>
         </ul>
       </Col>
