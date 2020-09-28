@@ -36,8 +36,8 @@
   display: flex;
   flex-flow: row;
   list-style: none;
-	justify-self: center;
-	margin: 0;
+  justify-self: center;
+  margin: 0;
 }
 
 .wrapperMenu li {

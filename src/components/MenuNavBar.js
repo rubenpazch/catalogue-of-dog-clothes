@@ -11,19 +11,19 @@ function MenuNavBar() {
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-						<a  href="#">Home</a>
-					</li>
+            <a href="#">Home</a>
+          </li>
           <li href="#features" className={styles.itemList}>
-						<a  href="#"> ADVENTURES</a>
-					</li>
+            <a href="#"> ADVENTURES</a>
+          </li>
           <li href="#pricing" className={styles.itemList}>
-            <a  href="#">MUSEUMS</a>
+            <a href="#">MUSEUMS</a>
           </li>
-					<li href="#pricing" className={styles.itemList}>
-            <a  href="#">LUXURY</a>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="#">LUXURY</a>
           </li>
-					<li href="#pricing" className={styles.itemList}>
-            <a  href="#">TRADITIONAL</a>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="#">TRADITIONAL</a>
           </li>
         </ul>
       </Col>

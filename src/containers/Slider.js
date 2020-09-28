@@ -31,7 +31,6 @@ function Slider() {
           alt="Third slide"
         />
 
-
       </Carousel.Item>
     </Carousel>
 

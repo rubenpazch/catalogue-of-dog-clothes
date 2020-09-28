@@ -16,8 +16,8 @@ function App() {
       <NavBar />
       <Slider />
       <Container className={styles.contentWrapper}>
-        <FeatureTours/>
-				<Navigation/>
+        <FeatureTours />
+        <Navigation />
       </Container>
     </Container>
   );

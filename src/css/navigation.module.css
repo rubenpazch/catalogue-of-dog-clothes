@@ -1,18 +1,18 @@
 .wrapper {
-	width: 100%;
-	height: 30px;
-	background-color: royalblue;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-flow: row;
-	margin-top: 15px;
-	margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  background-color: royalblue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.titleArrows{
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	background-color: salmon;
+.titleArrows {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: salmon;
 }

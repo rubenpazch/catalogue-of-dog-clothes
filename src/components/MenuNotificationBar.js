@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/NavBar';
-import Nav from 'react-bootstrap/Nav';
 import { Col, Row } from 'react-bootstrap';
 import styles from '../css/menunotificationbar.module.css';
 
@@ -11,16 +9,16 @@ function MenuNotificationBar() {
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-						<a href="#">Most Populars Places</a>
-					</li>
-          <li href="#features" className={styles.itemList}>
-						<a href="#"> Last Time Trip</a>
-					</li>
-          <li href="#pricing" className={styles.itemList}>
-            <a href="#">Flexible Itinerary</a>
+            <a href="localhost:3000">Most Populars Places</a>
           </li>
-					<li href="#pricing" className={styles.itemList}>
-            <a href="#">Deals</a>
+          <li href="#features" className={styles.itemList}>
+            <a href="localhost:3000"> Last Time Trip</a>
+          </li>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="localhost:3000">Flexible Itinerary</a>
+          </li>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="localhost:3000">Deals</a>
           </li>
         </ul>
       </Col>
