@@ -5,9 +5,10 @@ import Container from 'react-bootstrap/Container';
 import styles from '../css/itemfeaturetours.module.css';
 
 
-const ItemFeatureTour = ({image}) =>  (
+const ItemFeatureTour = ({image, text}) =>  (
     <Row className={styles.wrapper} >
       <img src={image}></img>
+			<p>{text}</p>
     </Row>
 );
 

@@ -11,9 +11,9 @@ import img3 from '../img/imgFeature3.png'
 function FeatureTours() {
   return (
     <Row className={styles.wrapper}>
-      <Col className={styles.featureWrapper} ><ItemFeatureTour image={img1} /></Col>
-			<Col className={styles.featureWrapper} ><ItemFeatureTour image={img2}/></Col>
-			<Col className={styles.featureWrapper} ><ItemFeatureTour image={img3} /></Col>
+      <Col className={styles.featureWrapper} ><ItemFeatureTour image={img1} text="Don't need to make a plann we are always available" /></Col>
+			<Col className={styles.featureWrapper} ><ItemFeatureTour image={img2} text="The best colletion of servicios ready to go"/></Col>
+			<Col className={styles.featureWrapper} ><ItemFeatureTour image={img3} text="Check reviews before booking a tour"/></Col>
     </Row>
   );
 }

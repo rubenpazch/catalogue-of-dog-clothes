@@ -6,6 +6,9 @@
 	border-radius: 5px;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-flow: row;
+	font-family: TitilliumBold, sans-serif;
 }
 
 .wrapper img{
@@ -14,4 +17,11 @@
 	position: relative;
 	top: -52px;
 	bottom: 0;
+}
+
+.wrapper p{
+	padding-top: 10px;
+	padding-right: 10px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1);
 }
