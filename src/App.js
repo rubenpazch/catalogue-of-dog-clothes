@@ -8,6 +8,7 @@ import Notifications from './containers/Notifications';
 import Slider from './containers/Slider';
 import FeatureTours from './containers/FeatureTours';
 import Navigation from './containers/Navigation';
+import ToursList from './containers/ToursList';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Container className={styles.contentWrapper}>
         <FeatureTours />
         <Navigation />
+        <ToursList />
       </Container>
     </Container>
   );
