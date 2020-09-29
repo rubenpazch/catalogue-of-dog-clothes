@@ -1,8 +1,11 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
+import { filterChange } from '../actions/index';
 
 function ToursList() {
   return (
@@ -27,4 +30,13 @@ function ToursList() {
   );
 }
 
-export default ToursList;
+const mapStateToProps = state => ({
+  tours: state.toursReducer,
+  filter: state.filterReducer,
+});
+
+const mapDispatchToProps = dispatch => ({
+  filterChange: filter => dispatch(filterChange(filter)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ToursList);
