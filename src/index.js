@@ -18,25 +18,16 @@ const deafultTours = [
   { title: 'Tour 6' },
 ];
 
-const initialState = {
-  loading: false,
-  tours: [],
-  error: '',
-};
-
 const deafaultFilter = 'All';
 
 const store = createStore(
-  rootReducer({
-    tours: initialState,
-    filter: deafaultFilter,
-  }),
+  rootReducer,
   compose(
     composeWithDevTools(),
     applyMiddleware(thunk),
   ),
 );
-//store.dispatch(fetchTours());
+// store.dispatch(fetchTours());
 
 ReactDOM.render(
   <Provider store={store}>
