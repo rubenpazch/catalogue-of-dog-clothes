@@ -1,6 +1,12 @@
 import * as ActionTypes from '../constants/action-types';
 
-const toursReducer = initialState => (state = initialState, action) => {
+const initialState = {
+  loading: false,
+  tours: [],
+  error: '',
+};
+
+const toursReducer = (state = initialState, action) => {
   switch (action.type) {
     case ActionTypes.FETCH_TOURS_REQUEST:
       return {
@@ -9,6 +15,7 @@ const toursReducer = initialState => (state = initialState, action) => {
       };
     case ActionTypes.FETCH_TOURS_SUCCESS:
       return {
+        ...state,
         loading: false,
         tours: action.payload,
         error: '',

@@ -2,9 +2,9 @@ import { combineReducers } from 'redux';
 import toursReducer from './tours';
 import filterReducer from './filter';
 
-export default function rootReducer({ tours, filter }) {
+export default function rootReducer() {
   return combineReducers({
-    toursReducer: toursReducer(tours),
-    filterReducer: filterReducer(filter),
+    toursReducer: toursReducer,
+    filterReducer: filterReducer,
   });
 }
