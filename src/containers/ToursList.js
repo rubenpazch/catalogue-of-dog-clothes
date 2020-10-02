@@ -9,16 +9,11 @@ import ItemTour from '../components/ItemTour';
 import fetchTours from '../actions/GetTours';
 
 function ToursList(props) {
-  const {
-    match: {
-      params: { term },
-    },
-  } = props;
 
   const dispatch = useDispatch();
-  React.userEffect(() => {
-    dispatch(fetchTours(term));
-  }, [dispatch, term]);
+  React.useEffect(() => {
+    dispatch(fetchTours('Casa'));
+  }, [dispatch, 'Casa']);
 
   const tours = useSelector(state => state.toursReducer);
   console.log(tours);
@@ -36,15 +31,6 @@ function ToursList(props) {
   );
 }
 
-ToursList.propTypes = {
-  match: PropTypes.shape({
-    isExact: PropTypes.bool.isRequired,
-    params: PropTypes.shape({
-      term: PropTypes.string.isRequired,
-    }).isRequired,
-    path: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-  }).isRequired,
-};
+
 
 export default ToursList;
