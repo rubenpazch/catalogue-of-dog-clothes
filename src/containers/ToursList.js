@@ -11,13 +11,12 @@ import ItemTour from '../components/ItemTour';
 
 function ToursList() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchTours());
   }, [dispatch]);
-  const state = useState(0);
-  console.log(state);
-
+  const dataa = useSelector(state => state.Tours);
+  console.log(dataa);
+  console.log(useState(0));
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
