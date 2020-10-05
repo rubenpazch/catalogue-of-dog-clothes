@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/NavBar';
-import Nav from 'react-bootstrap/Nav';
+//import Navbar from 'react-bootstrap/NavBar';
+//import Nav from 'react-bootstrap/Nav';
 import { Col, Row } from 'react-bootstrap';
 import styles from '../css/menunavbar.module.css';
 
@@ -11,19 +11,19 @@ function MenuNavBar() {
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-            <a href="#">Home</a>
+            <a href="www.google.com">Home</a>
           </li>
           <li href="#features" className={styles.itemList}>
-            <a href="#"> ADVENTURES</a>
+            <a href="www.google.com"> ADVENTURES</a>
           </li>
           <li href="#pricing" className={styles.itemList}>
-            <a href="#">MUSEUMS</a>
+            <a href="www.google.com">MUSEUMS</a>
           </li>
           <li href="#pricing" className={styles.itemList}>
-            <a href="#">LUXURY</a>
+            <a href="www.google.com">LUXURY</a>
           </li>
           <li href="#pricing" className={styles.itemList}>
-            <a href="#">TRADITIONAL</a>
+            <a href="www.google.com">TRADITIONAL</a>
           </li>
         </ul>
       </Col>
