@@ -24,6 +24,16 @@ const store = createStore(
   rootReducer,
   applyMiddleware(thunk),
 );
+store.subscribe(() => {
+  const state = store.getState();
+  if (state.status === 'waiting') {
+    console.log('Loading');
+  }
+  if (state.status === 'received') {
+    console.log(state.data[0]);
+  }
+});
+
 
 ReactDOM.render(
   <Provider store={store}>
