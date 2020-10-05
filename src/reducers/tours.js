@@ -1,9 +1,8 @@
 import * as ActionTypes from '../constants/action-types';
 
 const initialState = {
-  loading: false,
-  tours: [],
-  error: '',
+  data: [],
+  status: '',
 };
 
 const toursReducer = (state = initialState, action) => {
@@ -11,19 +10,17 @@ const toursReducer = (state = initialState, action) => {
     case ActionTypes.FETCH_TOURS_REQUEST:
       return {
         ...state,
-        loading: true,
+        status: 'waiting',
       };
     case ActionTypes.FETCH_TOURS_SUCCESS:
       return {
         ...state,
-        loading: false,
         tours: action.payload,
-        error: '',
+        status: 'received',
       };
     case ActionTypes.FETCH_TOURS_FAILURE:
       return {
-        loading: false,
-        tours: [],
+        status: 'failed',
         error: action.payload,
       };
     default:

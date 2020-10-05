@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+// import { compose } from 'redux';
+import fetchTours from '../actions/GetTours';
 
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
-import fetchTours from '../actions/GetTours';
 
-function ToursList(props) {
-
+function ToursList() {
   const dispatch = useDispatch();
-  React.useEffect(() => {
-    dispatch(fetchTours('Casa'));
-  }, [dispatch, 'Casa']);
 
-  const tours = useSelector(state => state.toursReducer);
-  console.log(tours);
+  useEffect(() => {
+    dispatch(fetchTours());
+  }, [dispatch]);
+  const state = useState(0);
+  console.log(state);
+
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -30,7 +31,5 @@ function ToursList(props) {
     </Row>
   );
 }
-
-
 
 export default ToursList;

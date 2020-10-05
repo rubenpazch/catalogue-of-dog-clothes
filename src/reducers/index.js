@@ -4,7 +4,7 @@ import filterReducer from './filter';
 
 export default function rootReducer() {
   return combineReducers({
-    toursReducer: toursReducer,
-    filterReducer: filterReducer,
+    toursReducer,
+    filterReducer,
   });
 }
