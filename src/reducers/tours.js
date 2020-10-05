@@ -1,25 +1,30 @@
-import * as ActionTypes from '../constants/action-types';
+import {
+  FETCH_TOURS_SUCCESS,
+  FETCH_TOURS_FAILURE,
+  FETCH_TOURS_REQUEST,
+} from '../actions/GetTours';
 
 const initialState = {
-  data: [],
+  meals: [],
   status: '',
 };
 
 const toursReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ActionTypes.FETCH_TOURS_REQUEST:
+    case FETCH_TOURS_REQUEST:
       return {
         ...state,
         status: 'waiting',
       };
-    case ActionTypes.FETCH_TOURS_SUCCESS:
+    case FETCH_TOURS_SUCCESS:
       return {
         ...state,
-        tours: action.payload,
+        meals: action.payload,
         status: 'received',
       };
-    case ActionTypes.FETCH_TOURS_FAILURE:
+    case FETCH_TOURS_FAILURE:
       return {
+        ...state,
         status: 'failed',
         error: action.payload,
       };
