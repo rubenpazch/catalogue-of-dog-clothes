@@ -1,6 +1,6 @@
 import React from 'react';
-//import Navbar from 'react-bootstrap/NavBar';
-//import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/NavBar';
+// import Nav from 'react-bootstrap/Nav';
 import { Col, Row } from 'react-bootstrap';
 import styles from '../css/menunavbar.module.css';
 
