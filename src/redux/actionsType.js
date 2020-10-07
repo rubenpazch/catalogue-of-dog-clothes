@@ -8,3 +8,7 @@ export const FETCH_TOURS_FAILURE = 'FETCH_TOURS_FAILURE';
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const LOADING = 'LOADING';
+
+/* for meals */
+export const FETCH_MEALS_REQUEST = 'FETCH_MEALS_REQUEST';
+export const FETCH_MEALS_SUCCESS = 'FETCH_MEALS_SUCCESS';

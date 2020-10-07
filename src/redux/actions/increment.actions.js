@@ -1,10 +1,8 @@
 import * as actionsTypes from '../actionsType';
 
-export const loading = () => {
-  return {
-    type: actionsTypes.LOADING,
-  };
-};
+export const loading = () => ({
+  type: actionsTypes.LOADING,
+});
 
 export const incrementCounterAsync = () => ({ type: actionsTypes.INCREMENT });
 
