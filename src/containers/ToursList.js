@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { useDispatch, useSelector } from 'react-redux';
-// import PropTypes from 'prop-types';
-// import { compose } from 'redux';
-import fetchTours from '../actions/GetTours';
-
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
+import { incrementCounter, decrecrementCounter } from '../redux/actions/increment.actions';
+import logo from '../React-icon.svg';
 
 function ToursList() {
+  const { counter, loading } = useSelector(state => state.incrementStore);
+
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchTours());
-  }, [dispatch]);
-  const dataa = useSelector(state => state.Tours);
-  console.log(dataa);
-  console.log(useState(0));
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -26,6 +20,14 @@ function ToursList() {
       </Col>
       <Col md={3} className={styles.filters}>
         <p>filters</p>
+        <h1>
+          {' '}
+          counter:
+          { counter }
+        </h1>
+        <button type="button" onClick={(() => dispatch(incrementCounter()))}>INCREMENT</button>
+        <button type="button" onClick={(() => dispatch(decrecrementCounter()))}>DECREMENT</button>
+        {loading && <img alt="text" src={logo} className="App-logo" />}
       </Col>
     </Row>
   );
