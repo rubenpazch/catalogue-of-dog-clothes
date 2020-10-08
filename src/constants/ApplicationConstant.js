@@ -1,3 +1,23 @@
-export const API_KEY = '61f042df8277050ed570cfe5e130fe2a';
-export const BASE_URL = 'https://api.themoviedb.org/3/';
-export const LANGUAGE = 'en-US';
+const myHeaders = new Headers();
+myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
+
+const urlencoded = new URLSearchParams();
+urlencoded.append('grant_type', 'client_credentials');
+urlencoded.append('client_id', 'woFiIDxrOp0EFGqgXfyhKJdpqzpoGKPD');
+urlencoded.append('client_secret', 'yuEqJjBrDMut4d69');
+
+const requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: urlencoded,
+  redirect: 'follow',
+};
+
+/* fetch('https://test.api.amadeus.com/v1/security/oauth2/token', requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error)); */
+
+export const BASE_URL = 'https://test.api.amadeus.com/v1/security/oauth2/token';
+
+export const params = requestOptions;
