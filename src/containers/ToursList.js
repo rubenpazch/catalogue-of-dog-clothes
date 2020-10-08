@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
-import { incrementCounter, decrecrementCounter } from '../redux/actions/increment.actions';
-import { getMeals } from '../redux/actions/meals.actions';
+import { incrementCounterAsync, decrecrementCounterAsync } from '../redux/services/increment.service';
+import getMeals from '../redux/services/meals.service';
 import logo from '../React-icon.svg';
 
 function ToursList() {
@@ -33,8 +33,8 @@ function ToursList() {
           counter:
           { counter }
         </h1>
-        <button type="button" onClick={(() => dispatch(incrementCounter()))}>INCREMENT</button>
-        <button type="button" onClick={(() => dispatch(decrecrementCounter()))}>DECREMENT</button>
+        <button type="button" onClick={(() => dispatch(incrementCounterAsync()))}>INCREMENT</button>
+        <button type="button" onClick={(() => dispatch(decrecrementCounterAsync()))}>DECREMENT</button>
         <button type="button" onClick={(() => dispatch(getMeals()))}>MEALS</button>
         {loading && <img alt="text" src={logo} className="App-logo" />}
       </Col>
