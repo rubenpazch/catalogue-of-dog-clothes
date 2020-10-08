@@ -5,20 +5,21 @@ import Row from 'react-bootstrap/Row';
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
 import { incrementCounterAsync, decrecrementCounterAsync } from '../redux/services/increment.service';
-import getMeals from '../redux/services/meals.service';
+
+import getTokenAsync from '../redux/services/token.service';
 import logo from '../React-icon.svg';
 
 function ToursList() {
   const { counter, loading } = useSelector(state => state.incrementStore);
-  const { meals } = useSelector(state => state.mealsStore);
+  const { token } = useSelector(state => state.tokenStore);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getMeals());
+    dispatch(getTokenAsync());
   }, [dispatch]);
 
-  console.log(meals);
+  console.log(token.client_id);
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -35,7 +36,7 @@ function ToursList() {
         </h1>
         <button type="button" onClick={(() => dispatch(incrementCounterAsync()))}>INCREMENT</button>
         <button type="button" onClick={(() => dispatch(decrecrementCounterAsync()))}>DECREMENT</button>
-        <button type="button" onClick={(() => dispatch(getMeals()))}>MEALS</button>
+        <button type="button" onClick={(() => dispatch(getTokenAsync()))}>MEALS</button>
         {loading && <img alt="text" src={logo} className="App-logo" />}
       </Col>
     </Row>
