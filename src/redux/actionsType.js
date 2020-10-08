@@ -16,3 +16,6 @@ export const FETCH_MEALS_SUCCESS = 'FETCH_MEALS_SUCCESS';
 /* for tokens */
 export const FETCH_TOKEN_REQUEST = 'FETCH_TOKEN_REQUEST';
 export const FETCH_TOKEN_SUCCESS = 'FETCH_TOKEN_SUCCESS';
+
+/* for cities */
+export const LIST_CITIES = 'LIST_CITIES';
