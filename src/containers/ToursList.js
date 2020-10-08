@@ -8,6 +8,7 @@ import { incrementCounterAsync, decrecrementCounterAsync } from '../redux/servic
 
 import getTokenAsync from '../redux/services/token.service';
 import logo from '../React-icon.svg';
+import jsonCities from '../static_data/cities.json';
 
 function ToursList() {
   const { counter, loading } = useSelector(state => state.incrementStore);
@@ -19,7 +20,8 @@ function ToursList() {
     dispatch(getTokenAsync());
   }, [dispatch]);
 
-  console.log(token.client_id);
+  console.log(jsonCities[0].lat);
+
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
