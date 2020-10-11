@@ -1,37 +1,66 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable no-nested-ternary */
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Autocomplete from 'react-autocomplete';
-import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { CitiesData, renderCitieTitle } from '../static_data/cities';
-import styles from '../css/itemtour.module.css';
-import img1 from '../img/tour1.jpg';
+import { matchStateToTerm, sortStates } from './utils';
+import { getStates } from './data';
+import setSearchInput from '../redux/actions/searchInput.acions';
 
 function SearchInput() {
-    //const {} = useState(0);
-    //console.log();
+  const searchCity = useSelector(state => state.searchInputStore);
+  const dispatch = useDispatch();
 
-  <div className="autocomplete-wrapper">
+  return (
     <Autocomplete
-      //value={this.state.val}
-     // items={CitiesData()}
-      //getItemValue={item => item.title}
-      //shouldItemRender={renderCitieTitle}
-      //renderMenu={item => (
-      //  <div className="dropdown">
-       //   {item}
-       // </div>
-      //)}
-      //renderItem={(item, isHighlighted) => (
-       // <div className={`item ${isHighlighted ? 'selected-item' : ''}`}>
-        //  {item.title}
-        //</div>
-      //)}
-      // onChange={(event, val) => this.setState({ val })}
-      // onSelect={val => this.setState({ val })}
-    />
-  </div>
+      value={searchCity.searchCity}
+      inputProps={{ id: 'states-autocomplete', placeholder: 'Type a city' }}
+      wrapperStyle={{ position: 'relative', display: 'inline-block' }}
+      items={getStates(searchCity.searchCity)}
+      getItemValue={item => `${item.city}, ${item.country}`}
+      shouldItemRender={matchStateToTerm}
+      sortItems={sortStates}
+      onChange={(event, value) => dispatch(setSearchInput(value))}
+      onSelect={value => dispatch(setSearchInput(value))}
+      openOnFocus={false}
+      renderMenu={(items, value) => (
 
+        <div className="menu">
+          {value === '' ? (
+            <div className="item">Ej. New York</div>
+          ) : items.length === 0 ? (
+            <div className="item">
+              No matches for
+              { ` ${value}`}
+            </div>
+          ) : items}
+        </div>
+
+      )}
+      renderItem={(item, isHighlighted) => (
+        item.header
+          ? (
+            <div
+              className="item item-header"
+              key={item.header}
+            >
+              {item.header}
+            </div>
+          )
+          : (
+            <div
+              className={`item ${isHighlighted ? 'item-highlighted' : ''}`}
+              key={item.id}
+            >
+              {`${item.city}, ${item.country} ` }
+            </div>
+          )
+      )}
+    />
+  );
 }
+
+/*  useEffect(() => {
+    dispatch(setSearchInput(searchCity.searchCity));
+  }, [dispatch]); */
 
 export default SearchInput;

@@ -19,3 +19,6 @@ export const FETCH_TOKEN_SUCCESS = 'FETCH_TOKEN_SUCCESS';
 
 /* for cities */
 export const LIST_CITIES = 'LIST_CITIES';
+
+/* for the input search */
+export const FETCH_CITY = 'FETCH_CITY';
