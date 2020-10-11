@@ -1,0 +1,36 @@
+.wrapper {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  min-height: 10vh;
+	max-height: 80px;
+	height: 100px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+}
+
+.contentWrapper {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.contentWrapper p{
+	color: #000;
+}
+
+.logo{
+	background-color: rgba(255, 255, 255, 0);
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 150px;
+}
+
+.logo img{
+	width: 110px;
+}
