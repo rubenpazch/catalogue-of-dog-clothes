@@ -4,41 +4,37 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
-import { incrementCounterAsync, decrecrementCounterAsync } from '../redux/services/increment.service';
-import getSearchInput from '../redux/actions/searchInput.acions';
-import getTokenAsync from '../redux/services/token.service';
-import logo from '../React-icon.svg';
-import { getStates } from '../components/data';
-import getDetailCity from '../components/CitiesCountries';
+
+import getTours from '../redux/services/tours.service';
+import { getCity } from '../components/data';
 
 function ToursList() {
   const { searchCity } = useSelector(state => state.searchInputStore);
-  // const { token } = useSelector(state => state.tokenStore);
-
+  const { tours } = useSelector(state => state.toursStore);
   const dispatch = useDispatch();
-
+  // const currentLocation = searchCity.split(',');
+  // const city = currentLocation[0];
+  // const country = currentLocation[1];
+  // const objLocation = getCity(city, country);
   useEffect(() => {
-    dispatch(getTokenAsync());
-  }, [dispatch]);
+    dispatch(getTours(searchCity));
+  }, [searchCity]);
 
-  const currentLocation = searchCity.split(',');
-  const city = currentLocation[0];
-  const country = currentLocation[1];
-
-  
-  console.log(getDetailCity(city));
+  let toursReceived = [];
+  if (tours.data !== undefined) {
+    toursReceived = tours.data;
+  }
 
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
         <Row className={styles.wrapperTours}>
-          <ItemTour titleTour="text1" />
-          <ItemTour titleTour="text2" />
-          <ItemTour titleTour="text3" />
-          <ItemTour titleTour="text4" />
-          <ItemTour titleTour="text5" />
-          <ItemTour titleTour="text6" />
-
+          {toursReceived.map(t => (
+            <ItemTour
+              key={t.id}
+              titleTour={t.name}
+            />
+          ))}
         </Row>
       </Col>
 

@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Autocomplete from 'react-autocomplete';
 import { matchStateToTerm, sortStates } from './utils';
