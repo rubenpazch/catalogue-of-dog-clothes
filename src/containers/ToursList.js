@@ -1,30 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../css/tourslist.module.css';
 import ItemTour from '../components/ItemTour';
-
 import getTours from '../redux/services/tours.service';
-import { getCity } from '../components/data';
 
 function ToursList() {
   const { searchCity } = useSelector(state => state.searchInputStore);
   const { tours } = useSelector(state => state.toursStore);
   const dispatch = useDispatch();
-  // const currentLocation = searchCity.split(',');
-  // const city = currentLocation[0];
-  // const country = currentLocation[1];
-  // const objLocation = getCity(city, country);
+  const [toursReceived, settoursReceived] = useState([]);
+  
   useEffect(() => {
     dispatch(getTours(searchCity));
   }, [searchCity]);
 
-  let toursReceived = [];
-  if (tours.data !== undefined) {
-    toursReceived = tours.data;
-  }
-
+  useEffect(() => {
+    if(tours.data){
+      settoursReceived(tours.data);
+    }
+  }, [tours.data]);
+  //let toursReceived = [];
+  //if (tours.data !== undefined) {
+  //  toursReceived = tours.data;
+  //}
+  //console.log(tours);
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -33,6 +34,8 @@ function ToursList() {
             <ItemTour
               key={t.id}
               titleTour={t.name}
+              imgPath={t.pictures}
+              amount={t.price.amount}
             />
           ))}
         </Row>
