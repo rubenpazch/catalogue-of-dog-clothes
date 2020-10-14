@@ -3,14 +3,13 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import styles from '../css/itemtour.module.css';
-import img1 from '../img/tour1.jpg';
 
-const ItemTour = ({ titleTour }) => (
+const ItemTour = ({ titleTour, imgPath, amount }) => (
   <Col className={styles.wrapper}>
-    <img src={img1} alt="tour1" />
+    <img src={imgPath} alt="tour1" />
     <div className={styles.header}>
       <h5 md={9}>{ titleTour }</h5>
-      <span md={3}>$15.00</span>
+      <span md={3}>{amount}</span>
     </div>
     <div className={styles.services}>
       <ul className={styles.listServices}>
