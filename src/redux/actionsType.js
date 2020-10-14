@@ -22,3 +22,5 @@ export const LIST_CITIES = 'LIST_CITIES';
 
 /* for the input search */
 export const FETCH_CITY = 'FETCH_CITY';
+
+export const FETCH_TOKEN = 'FETCH_TOKEN';
