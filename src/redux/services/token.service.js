@@ -7,6 +7,7 @@ const getTokenAsync = () => dispatch => {
     .then(result => {
       localStorage.setItem('token', result.access_token);
       dispatch(getToken(result));
+      // dispatch(getGetToken(result));
     })
     .catch(error => {
       console.log(error);

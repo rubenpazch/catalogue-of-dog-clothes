@@ -19,6 +19,11 @@ export default function toursReducer(state = initialState, action) {
         tours: action.tours,
         loading: false,
       };
+    case actionsTypes.FETCH_TOKEN:
+        return {
+          ...state,
+          token: action.token,
+        };
     default:
       return state;
   }

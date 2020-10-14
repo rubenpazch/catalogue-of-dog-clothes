@@ -5,4 +5,9 @@ const getToursAsync = result => ({
   tours: result,
 });
 
+/* const getGetToken = result => ({
+  type: actionsTypes.FETCH_TOKEN,
+  token: result,
+}); */
+
 export default getToursAsync;
