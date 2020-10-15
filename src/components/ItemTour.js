@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import styles from '../css/itemtour.module.css';
 
-const ItemTour = ({ titleTour, imgPath, amount }) => (
+const ItemTour = ({ titleTour, imgPath, amount, id }) => (
   <Col className={styles.wrapper}>
     <img src={imgPath} alt="tour1" />
     <div className={styles.header}>
-      <h5 md={9}>{ titleTour }</h5>
+      <h5 md={9}>
+        <Link to={`/tourdetail/${id}`}>
+          {titleTour}
+        </Link>
+      </h5>
       <span md={3}>{amount}</span>
     </div>
     <div className={styles.services}>
