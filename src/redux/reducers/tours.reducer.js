@@ -20,10 +20,10 @@ export default function toursReducer(state = initialState, action) {
         loading: false,
       };
     case actionsTypes.FETCH_TOKEN:
-        return {
-          ...state,
-          token: action.token,
-        };
+      return {
+        ...state,
+        token: action.token,
+      };
     default:
       return state;
   }
