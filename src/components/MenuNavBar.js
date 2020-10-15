@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 // import Navbar from 'react-bootstrap/NavBar';
 // import Nav from 'react-bootstrap/Nav';
 import { Col, Row } from 'react-bootstrap';
@@ -11,7 +12,7 @@ function MenuNavBar() {
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-            <a href="www.google.com">Home</a>
+            <NavLink to="/" activeClassName="active">Home</NavLink>
           </li>
           <li href="#features" className={styles.itemList}>
             <a href="www.google.com"> ADVENTURES</a>
