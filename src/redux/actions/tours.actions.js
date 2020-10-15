@@ -5,11 +5,25 @@ export const getToursAsync = result => ({
   tours: result,
 });
 
-export const orderToursByPrice = result => ({
-  type: actionsTypes.ORDER_TOURS_BY_PRICE,
+export const orderToursByPriceDesc = result => ({
+  type: actionsTypes.ORDER_TOURS_BY_PRICE_DESC,
   tours: result,
 });
 
+export const orderToursByPriceAsc = result => ({
+  type: actionsTypes.ORDER_TOURS_BY_PRICE_ASC,
+  tours: result,
+});
+
+export const orderToursByDescriptionDesc = result => ({
+  type: actionsTypes.ORDER_TOURS_BY_DESCRIPTION_DESC,
+  tours: result,
+});
+
+export const orderToursByDescriptionAsc = result => ({
+  type: actionsTypes.ORDER_TOURS_BY_DESCRIPTION_ASC,
+  tours: result,
+});
 /* const getGetToken = result => ({
   type: actionsTypes.FETCH_TOKEN,
   token: result,
