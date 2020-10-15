@@ -11,21 +11,21 @@ function ToursList() {
   const { tours } = useSelector(state => state.toursStore);
   const dispatch = useDispatch();
   const [toursReceived, settoursReceived] = useState([]);
-  
+
   useEffect(() => {
     dispatch(getTours(searchCity));
   }, [searchCity]);
 
   useEffect(() => {
-    if(tours.data){
+    if (tours.data) {
       settoursReceived(tours.data);
     }
   }, [tours.data]);
-  //let toursReceived = [];
-  //if (tours.data !== undefined) {
+  // let toursReceived = [];
+  // if (tours.data !== undefined) {
   //  toursReceived = tours.data;
-  //}
-  //console.log(tours);
+  // }
+  // console.log(tours);
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -36,6 +36,7 @@ function ToursList() {
               titleTour={t.name}
               imgPath={t.pictures}
               amount={t.price.amount}
+              id={t.id}
             />
           ))}
         </Row>
