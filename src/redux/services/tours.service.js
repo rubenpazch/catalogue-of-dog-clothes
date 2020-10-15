@@ -1,4 +1,4 @@
-import getToursAsync from '../actions/tours.actions';
+import { getToursAsync } from '../actions/tours.actions';
 import { getCity } from '../../components/data';
 
 const getTours = searchCity => dispatch => {

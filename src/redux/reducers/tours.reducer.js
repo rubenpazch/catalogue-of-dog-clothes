@@ -19,6 +19,12 @@ export default function toursReducer(state = initialState, action) {
         tours: action.tours,
         loading: false,
       };
+    case actionsTypes.ORDER_TOURS_BY_PRICE:
+      return {
+        ...state,
+        tours: action.tours.sort( function(a, b) { return b.price.amount - a.price.amount }),
+        loading: false,
+      };
     case actionsTypes.FETCH_TOKEN:
       return {
         ...state,
