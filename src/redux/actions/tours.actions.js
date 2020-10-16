@@ -27,5 +27,5 @@ export const orderToursByDescriptionAsc = result => ({
 
 export const getTourDetailAsync = result => ({
   type: actionsTypes.FETCH_TOUR_DETAIL_SUCCESS,
-  tours: result,
+  tourdetail: result,
 });

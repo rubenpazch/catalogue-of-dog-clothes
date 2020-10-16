@@ -1,4 +1,4 @@
-import { getToursAsync } from '../actions/tours.actions';
+import { getTourDetailAsync } from '../actions/tours.actions';
 import { showAlertDanger } from '../actions/alert.actions';
 
 const getTourDetail = id => dispatch => {
@@ -7,7 +7,7 @@ const getTourDetail = id => dispatch => {
   myHeaders.append('Authorization', `Bearer ${token}`);
   let URL = '';
 
-  if (objLocation === undefined) {
+  if (id === undefined) {
     URL = 'https://test.api.amadeus.com/v1/shopping/activities/82701';
   } else {
     URL = `https://test.api.amadeus.com/v1/shopping/activities/${id}`;
@@ -22,7 +22,7 @@ const getTourDetail = id => dispatch => {
   fetch(URL, requestOptions)
     .then(response => response.json())
     .then(result => {
-      dispatch(getToursAsync(result));
+      dispatch(getTourDetailAsync(result.data));
     })
     .catch(error => {
       dispatch(showAlertDanger(`Error calling to the API for tours: ${error}`));
