@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import getTourDetail from '../redux/services/tourdetail.service';
-import imgExample from '../img/tour1.jpg';
 
 function TourDetail() {
   const dispatch = useDispatch();
