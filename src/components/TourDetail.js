@@ -4,7 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import imgExample from '../img/tour1.jpg';
 
 function TourDetail() {
-  console.log(useParams());
   return (
     <div>
       <img src={imgExample} alt="images" />

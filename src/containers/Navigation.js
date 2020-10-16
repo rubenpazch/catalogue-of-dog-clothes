@@ -32,7 +32,6 @@ function Navigation() {
   }
 
   function handleChangeDescription(event) {
-    console.log(event.target.value);
     if (event.target.value === '1') {
       dispatch(orderToursByDescriptionAsc(toursReceived));
     } else {

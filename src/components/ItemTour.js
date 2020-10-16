@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -44,5 +45,19 @@ const ItemTour = ({
 
   </Col>
 );
+
+ItemTour.propTypes = {
+  titleTour: PropTypes.string,
+  imgPath: PropTypes.string,
+  amount: PropTypes.number,
+  id: PropTypes.number,
+};
+
+ItemTour.defaultProps = {
+  titleTour: 'Example',
+  imgPath: '../img/tour1.jpg',
+  amount: 0,
+  id: 99999999999999,
+};
 
 export default ItemTour;

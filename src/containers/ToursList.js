@@ -21,11 +21,7 @@ function ToursList() {
       settoursReceived(tours.data);
     }
   }, [tours.data]);
-  // let toursReceived = [];
-  // if (tours.data !== undefined) {
-  //  toursReceived = tours.data;
-  // }
-  // console.log(tours);
+
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -47,19 +43,3 @@ function ToursList() {
 }
 
 export default ToursList;
-
-/*
- <Col md={3} className={styles.filters}>
-        <p>filters</p>
-        <h1>
-          {' '}
-          counter:
-          { counter }
-        </h1>
-        <button type="button" onClick={(() => dispatch(incrementCounterAsync()))}>INCREMENT</button>
-        <button type="button" onClick={(() => dispatch(decrecrementCounterAsync()))}>DECREMENT</button>
-        <button type="button" onClick={(() => dispatch(getTokenAsync()))}>MEALS</button>
-        {loading && <img alt="text" src={logo} className="App-logo" />}
-      </Col>
-
-*/

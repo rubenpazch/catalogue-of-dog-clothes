@@ -1,7 +1,6 @@
 import React from 'react';
-// import Col from 'react-bootstrap/Col';
+import PropTypes from 'prop-types';
 import Row from 'react-bootstrap/Row';
-// import Container from 'react-bootstrap/Container';
 import styles from '../css/itemfeaturetours.module.css';
 
 const ItemFeatureTour = ({ image, text }) => (
@@ -10,5 +9,15 @@ const ItemFeatureTour = ({ image, text }) => (
     <p>{text}</p>
   </Row>
 );
+
+ItemFeatureTour.propTypes = {
+  text: PropTypes.string,
+  image: PropTypes.string,
+};
+
+ItemFeatureTour.defaultProps = {
+  image: 'Example',
+  text: '../img/tour1.jpg',
+};
 
 export default ItemFeatureTour;
