@@ -1,4 +1,5 @@
 import { getToursAsync } from '../actions/tours.actions';
+import { showAlertDanger } from '../actions/alert.actions';
 import { getCity } from '../../components/data';
 
 const getTours = searchCity => dispatch => {
@@ -29,7 +30,7 @@ const getTours = searchCity => dispatch => {
       dispatch(getToursAsync(result));
     })
     .catch(error => {
-      console.log(error);
+      dispatch(showAlertDanger(`Error calling to the API for tours: ${error}`));
     });
 };
 

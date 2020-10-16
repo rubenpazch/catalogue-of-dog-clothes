@@ -21,3 +21,9 @@ export const LIST_CITIES = 'LIST_CITIES';
 export const FETCH_CITY = 'FETCH_CITY';
 
 export const FETCH_TOKEN = 'FETCH_TOKEN';
+
+/* alerts  */
+export const SHOW_ALERT_ERROR = 'SHOW_ALERT_ERROR';
+export const SHOW_ALERT_WARNING = 'SHOW_ALERT_WARNING';
+export const HIDE_ALERT_WARNING = 'HIDE_ALERT_WARNING';
+export const SHOW_ALERT_SUCCESS = 'SHOW_ALERT_SUCCESS';
