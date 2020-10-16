@@ -3,7 +3,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Autocomplete from 'react-autocomplete';
 import { matchStateToTerm, sortStates } from './utils';
-import { getStates } from './data';
+import { getStates } from '../static_data/data';
 import setSearchInput from '../redux/actions/searchInput.acions';
 
 function SearchInput() {

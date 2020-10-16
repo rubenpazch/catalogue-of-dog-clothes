@@ -24,13 +24,8 @@ export const orderToursByDescriptionAsc = result => ({
   type: actionsTypes.ORDER_TOURS_BY_DESCRIPTION_ASC,
   tours: result,
 });
-/* const getGetToken = result => ({
-  type: actionsTypes.FETCH_TOKEN,
-  token: result,
-}); */
-/*
-export default {
-  getToursAsync,
-  orderToursByPrice,
-};
-*/
+
+export const getTourDetailAsync = result => ({
+  type: actionsTypes.FETCH_TOUR_DETAIL_SUCCESS,
+  tours: result,
+});

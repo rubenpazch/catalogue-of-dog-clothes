@@ -1,4 +1,4 @@
-import { getStates, getCategorizedStates } from './data';
+import { getStates, getCategorizedStates } from '../static_data/data';
 
 export function matchStateToTerm(state, value) {
   return (

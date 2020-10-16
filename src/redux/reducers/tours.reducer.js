@@ -3,7 +3,6 @@ import * as actionsTypes from '../actionsType';
 const initialState = {
   tours: [],
   loading: false,
-  token: '',
 };
 
 export default function toursReducer(state = initialState, action) {
@@ -58,11 +57,6 @@ export default function toursReducer(state = initialState, action) {
           return 0;
         }),
         loading: false,
-      };
-    case actionsTypes.FETCH_TOKEN:
-      return {
-        ...state,
-        token: action.token,
       };
     default:
       return state;
