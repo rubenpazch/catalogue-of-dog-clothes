@@ -1,35 +1,34 @@
 .wrapper {
-    
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.filters{
-    background-color: darkgoldenrod;
+.filters {
+  background-color: darkgoldenrod;
 }
 
 .tour {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
 }
 
 .wrapperTours {
-    height: auto;
-    min-height: 100%;
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    margin: -15px 0 0 0;
-    padding: 0;
-    flex-wrap: wrap;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  margin: -15px 0 0 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.wrapperContent{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+.wrapperContent {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }

@@ -12,31 +12,31 @@
 .titleArrows {
   display: flex;
   flex-flow: row;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
-.filterByPrices{
+.filterByPrices {
   display: flex;
   flex-flow: row;
   align-items: baseline;
 }
 
-.filterByTitle{
+.filterByTitle {
   display: flex;
   flex-flow: row;
   align-items: baseline;
 }
 
-.rowFilter{
+.rowFilter {
   width: 400px;
   margin: 0;
   padding: 0;
 }
 
-.labelStyle{
+.labelStyle {
   width: 200px;
 }
 
-.selectStyle{
+.selectStyle {
   margin-top: 7px;
 }
