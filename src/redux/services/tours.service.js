@@ -28,7 +28,6 @@ const getTours = searchCity => dispatch => {
     .then(response => response.json())
     .then(result => {
       dispatch(getToursAsync(result));
-
     })
     .catch(error => {
       dispatch(showAlertDanger(`Error calling to the API for tours: ${error}`));

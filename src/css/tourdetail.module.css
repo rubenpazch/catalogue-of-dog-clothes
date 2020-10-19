@@ -1,88 +1,87 @@
 .wrapper {
-    padding: 50px 0 0 0;
-    margin: 0;
-    height: 100vh;
-  }
-  
-  .wrapperImages{
-      padding: 0;
-      margin: 0;
-  }
-
-  .rowPictures{
-    padding: 15px;
-  }
-
-  .bigPicture{
-      
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-  }
-
-  .bigPicture img{
-    width: 95%; 
-    padding: 0;   
-    margin: 0;   
-    border-radius: 15px;
-    border: 2px dotted rgb(204, 204, 204);
-    min-height: 250px;
-  }
-
-.smallPictures{    
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  padding: 50px 0 0 0;
+  margin: 0;
+  height: 100vh;
 }
 
-  .smallPictures img {
-    border: 2px dotted rgb(204, 204, 204);
-    width: 80px;
-    padding: 0 ;
-    margin: 0 0 15px 0;
-    border-radius: 10px;
-    min-height: 50px;
-  }
+.wrapperImages {
+  padding: 0;
+  margin: 0;
+}
 
-  .WrapperContent{
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-flow: column;
-  }
+.rowPictures {
+  padding: 15px;
+}
 
-  .titleDetailtTour{
-      padding: 0;
-      margin: 0;
-  }
+.bigPicture {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
 
-  .descripcionTour{
-    padding: 0;
-    margin: 0;
-  }
+.bigPicture img {
+  width: 95%;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  border: 2px dotted rgb(204, 204, 204);
+  min-height: 250px;
+}
 
-  .price{
-      padding: 0;
-      margin: 0;
-      color: #28a745;
-  }
+.smallPictures {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
-  .Type{
-      padding: 0;
-      margin: 0;
-  }
+.smallPictures img {
+  border: 2px dotted rgb(204, 204, 204);
+  width: 80px;
+  padding: 0;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+  min-height: 50px;
+}
 
-  .bookNow{
-      padding: 0;
-      margin: 15px 0 0 0;
-  }
+.WrapperContent {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}
 
-  .bookNow button{
-      width: 250px;
-      height: 40px;
-  }
+.titleDetailtTour {
+  padding: 0;
+  margin: 0;
+}
+
+.descripcionTour {
+  padding: 0;
+  margin: 0;
+}
+
+.price {
+  padding: 0;
+  margin: 0;
+  color: #28a745;
+}
+
+.Type {
+  padding: 0;
+  margin: 0;
+}
+
+.bookNow {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.bookNow button {
+  width: 250px;
+  height: 40px;
+}
