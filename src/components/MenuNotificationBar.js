@@ -23,7 +23,7 @@ function MenuNotificationBar() {
         </ul>
       </Col>
       <Col className={styles.rigthwrapper} md={3}>
-        <p>cart</p>
+        <p>-</p>
       </Col>
     </Row>
   );

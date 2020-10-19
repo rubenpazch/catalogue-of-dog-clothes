@@ -1,5 +1,5 @@
 export function getStates(term = '') {
-  if (term.length < 3) {
+  if (term.length < 2) {
     return [];
   }
   return [
