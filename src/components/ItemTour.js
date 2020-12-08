@@ -49,8 +49,8 @@ const ItemTour = ({
 ItemTour.propTypes = {
   titleTour: PropTypes.string,
   imgPath: PropTypes.string,
-  amount: PropTypes.number,
-  id: PropTypes.number,
+  amount: PropTypes.string,
+  id: PropTypes.string,
 };
 
 ItemTour.defaultProps = {

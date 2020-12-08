@@ -21,7 +21,6 @@ function ToursList() {
       settoursReceived(tours.data);
     }
   }, [tours.data]);
-
   return (
     <Row className={styles.wrapper}>
       <Col md={9} className={styles.wrapperContent}>
@@ -30,7 +29,7 @@ function ToursList() {
             <ItemTour
               key={t.id}
               titleTour={t.name}
-              imgPath={t.pictures}
+              imgPath={t.pictures[0]}
               amount={t.price.amount}
               id={t.id}
             />
