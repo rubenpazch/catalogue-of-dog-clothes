@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import Row from 'react-bootstrap/Row';
 import styles from '../css/itemfeaturetours.module.css';
 
-const ItemFeatureTour = ({ image, text }) => (
-  <Row className={styles.wrapper}>
+const ItemFeatureTour = ({
+  image, text,
+}) => (
+  <Row className={styles.wrapper} data-testid="ItemFeatureTour">
     <img src={image} alt="casa" />
     <p>{text}</p>
   </Row>

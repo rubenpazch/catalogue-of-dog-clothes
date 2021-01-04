@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 import { render, cleanup } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import ItemTour from '../../components/ItemTour';
 import '@testing-library/jest-dom/extend-expect';
+import ItemTour from '../../components/ItemTour';
 
 afterEach(cleanup);
 
@@ -34,7 +34,7 @@ it('renders item correctly', () => {
   getByTestId('8');
 });
 
-it('render button information', () => {
+it('render ItemTour information', () => {
   const { getByTestId } = render(
     <Router>
       <Route>
