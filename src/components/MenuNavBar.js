@@ -7,7 +7,7 @@ import styles from '../css/menunavbar.module.css';
 
 function MenuNavBar() {
   return (
-    <Row className={styles.wrapper}>
+    <Row className={styles.wrapper} data-testid="MenuNavBar">
       <Col className={styles.leftwrapper} md={2} />
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
