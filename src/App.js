@@ -16,7 +16,6 @@ import Navigation from './containers/Navigation';
 import ToursList from './containers/ToursList';
 import getTokenAsync from './redux/services/token.service';
 import TourDetail from './components/TourDetail';
-import Alerts from './components/Alerts';
 
 function App() {
   const dispatch = useDispatch();
@@ -38,7 +37,6 @@ function App() {
             <Route path="/">
               <FeatureTours />
               <Navigation />
-              <Alerts />
               <ToursList />
             </Route>
           </Switch>
