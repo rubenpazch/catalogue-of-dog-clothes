@@ -1,68 +1,200 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="./images/phone-wishlist.png"
+        height="230">
+</p>
 
-## Available Scripts
+<p align="center">
+    <h1 align="center"> Catalogue of Dog Clothes   </h1>    
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <h2 align="center"> Web application desktop version to list tours and check details</h2>    
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.w3schools.com/js/js_es6.asp" alt="JavaScript">
+        <img src="https://img.shields.io/badge/JavaScript-6.0.0-yellowgreen" /></a>
+    <a href="https://webpack.js.org/" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack%204-4.0.0-lightgrey" /></a>      
+    <a href="https://getbootstrap.com/" alt="Bootstrap">
+        <img src="https://img.shields.io/badge/Bootstrap-4.5.0.-orange" /></a>
+    
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <p align="center">    
+    <br />
+    <a href="https://github.com/rubenpazch/catalogue-of-dog-clothes"><strong>Explore this project »</strong></a>
+    <br />
+    <br />&#10023;
+    <a href="https://reverent-lamport-faa64f.netlify.app/tourdetail/8472">View Demo</a>   &#10023;  
+    <a href="https://github.com/rubenpazch/catalogue-of-dog-clothes/issues">Report Bug</a>    &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;
+    <a href="#Extra-Feature">Extra Feature</a> &#10023;
+    <a href="#Screenshots-of-the-App">Screenshots of the App</a> &#10023;
+    <a href="#Authors">Author</a> &#10023;
+    
+  </p>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Catalogue of Dog Clothes is web application desktop version to receive a list of tours from an API, this information is dinamic, we are able to filter our list by price, title or also we can use the search option to find tours for an specific city (New York, Mexico Cito, Lima, Boston), check tours details by clicking each tours. This application was build using <b> React & Redux </b> you can find the full requirements   <a href="https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32" alt="Requirements">here</a>. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="./images/ksnip_20210104-170023.png" width="100%"/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/>
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was built using React and Redux version 17, it is a web application and for running on your local environment you should follow these guidelines.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Prerequisites
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Ruby 17.0.0
+- Redux 4.0.5
+- Git
+- React Testing Library
+- CSS modules 
+- React Hooks
 
-### Analyzing the Bundle Size
+### Setup
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The project repository can be found in [GitHub link](https://github.com/rubenpazch/catalogue-of-dog-clothes) or just clone the project using this command. 
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+```
+Using SSH 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+# git clone  git@github.com:rubenpazch/catalogue-of-dog-clothes.git
+
+Using HTTPS
+
+# git clone  https://github.com/rubenpazch/catalogue-of-dog-clothes.git
+
+```
+
++ Open terminal on your workspace with
+
+```
+cd /home/workspace/catalogue-of-dog-clothes
+```
+
+
+## Install
+
+
+To get started with the app, clone the repo, and then install the needed packages using yarn or npm:
+
+```
+# npm install or yarn install
+```
+
+to start the local application run:
+
+```
+# npm start
+```
+
+
+### Usage
+
+To watch the local version of this project check on your browser for the link 
+
+```
+Listening on tcp://127.0.0.1:3000
+```
+
+### Run tests
+
+Run the test suite to verify that everything is working correctly:
+
+```
+# npm test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To deploy to netlify just push your changes and create a new project inside netlify, the link your account with github, remenber that you can use 
 
-### `yarn build` fails to minify
+<b>npm run build or yarn build</b>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Tools used on this project
+
+## Extra Feature
+
++ For this project it was 
++ stylelint
++ Amadeus API
+
+
+<br/>
+
+## Watch the Live Version
+
+
+click on the link to watch [live version](https://reverent-lamport-faa64f.netlify.app/)
+
+<br/>
+
+
+
+## Screenshots of the App
+
+
+<img src="./images/ksnip_20210104-170023.png" width="100%"/>
+<br/>
+<img src="./images/ksnip_20210104-171316.png" width="100%"/>
+
+<br/>
+<img src="./images/ksnip_20210104-171421.png" width="100%"/>
+
+
+
+## Contributing
+
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
+
+Feel free to check the [issues page](https://github.com/rubenpazch/Group-our-transactions/issues).
+
+
+## Authors
+
+👤 **Ruben Paz Chuspe**
+
+- Github: [@rubenpazch](https://github.com/rubenpazch)
+- Linkedin: [rubenpch](https://www.linkedin.com/in/rubenpch/)
+- Twitter: [@ChuspePaz](https://twitter.com/ChuspePaz)
+
+### Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* [Creative Commons ](https://creativecommons.org/licenses/by-nc/4.0/)
+
+* [behance.net ](https://www.behance.net/gallery/24531031/Pimp-my-DOG-Online-store-E-commerse-project)
+
+* [Amadeus](https://developers.amadeus.com/)
