@@ -5,7 +5,6 @@ import {
   Route,
 } from 'react-router-dom';
 import { render, cleanup } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom/extend-expect';
 import ItemFeatureTour from '../../components/ItemFeatureTour';
 
@@ -45,14 +44,3 @@ it('render ItemFeatureTour information', () => {
   expect(getByTestId('ItemFeatureTour')).toHaveTextContent('Don\'t need to make a plann we are always available');
   expect(getByTestId('ItemFeatureTour')).toHaveTextContent('Don\'t need to make a plann we are always available');
 });
-
-// it('machets snapshot ItemFeatureTour', () => {
-//   const ItemFeatureTour = renderer.create(
-//     <Router>
-//       <Route>
-//         <ItemFeatureTour image="img1" text="Don't need to make a plann we are always available" />
-//       </Route>
-//     </Router>,
-//   ).toJSON();
-//   // expect(ItemFeatureTour).toMatchSnapshot();
-// });
