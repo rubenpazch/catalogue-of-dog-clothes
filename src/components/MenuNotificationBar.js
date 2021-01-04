@@ -4,7 +4,7 @@ import styles from '../css/menunotificationbar.module.css';
 
 function MenuNotificationBar() {
   return (
-    <Row className={styles.wrapper}>
+    <Row className={styles.wrapper} data-testid="MenuNotificationBar">
       <Col className={styles.leftwrapper} md={2} />
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
