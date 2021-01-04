@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./images/phone-wishlist.png"
+    <img src="./images/ksnip_20210104-170023.png"
         height="230">
 </p>
 
