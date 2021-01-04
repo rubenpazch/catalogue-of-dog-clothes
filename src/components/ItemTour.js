@@ -9,7 +9,7 @@ import styles from '../css/itemtour.module.css';
 const ItemTour = ({
   titleTour, imgPath, amount, id,
 }) => (
-  <Col className={styles.wrapper}>
+  <Col className={styles.wrapper} data-testid={id}>
     <img src={imgPath} alt="tour1" />
     <div className={styles.header}>
       <h5 md={9}>
