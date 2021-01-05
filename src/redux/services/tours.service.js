@@ -8,14 +8,15 @@ const getTours = (searchCity, token) => dispatch => {
   const country = currentLocation[1];
   const objLocation = getCity(city, country);
   const myHeaders = new Headers();
-  // const token = localStorage.getItem('token');
+
   myHeaders.append('Authorization', `Bearer ${token}`);
   let URL = '';
-
-  if (objLocation === undefined) {
-    URL = 'https://test.api.amadeus.com/v1/shopping/activities/by-square?north=35.685&west=139.7514&south=35.985&east=139.8514';
-  } else {
-    URL = `https://test.api.amadeus.com/v1/shopping/activities/by-square?north=${objLocation.lat}&west=${objLocation.lat + 0.00005}&south=${objLocation.lng}&east=${objLocation.lng + 0.00005}`;
+  if (token !== undefined) {
+    if (objLocation === undefined) {
+      URL = 'https://test.api.amadeus.com/v1/shopping/activities/by-square?north=35.685&west=139.7514&south=35.985&east=139.8514';
+    } else {
+      URL = `https://test.api.amadeus.com/v1/shopping/activities/by-square?north=${objLocation.lat}&west=${objLocation.lat + 0.00005}&south=${objLocation.lng}&east=${objLocation.lng + 0.00005}`;
+    }
   }
 
   const requestOptions = {

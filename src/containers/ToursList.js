@@ -10,14 +10,13 @@ import TokenContext from '../context/TokenContext';
 function ToursList() {
   const { searchCity } = useSelector(state => state.searchInputStore);
   const { tours } = useSelector(state => state.toursStore);
-  // eslint-disable-next-line camelcase
   const token = useContext(TokenContext);
   const dispatch = useDispatch();
   const [toursReceived, settoursReceived] = useState([]);
 
   useEffect(() => {
     dispatch(getTours(searchCity, token.access_token));
-  }, [searchCity]);
+  }, [searchCity, token.access_token]);
 
   useEffect(() => {
     if (tours.data) {
