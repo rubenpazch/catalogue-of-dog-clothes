@@ -13,11 +13,6 @@ const requestOptions = {
   redirect: 'follow',
 };
 
-/* fetch('https://test.api.amadeus.com/v1/security/oauth2/token', requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error)); */
-
 export const BASE_URL = 'https://test.api.amadeus.com/v1/security/oauth2/token';
 
 export const params = requestOptions;

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 
 import {
@@ -16,33 +16,40 @@ import Navigation from './containers/Navigation';
 import ToursList from './containers/ToursList';
 import getTokenAsync from './redux/services/token.service';
 import TourDetail from './components/TourDetail';
+import TokenContext from './context/TokenContext';
 
 function App() {
   const dispatch = useDispatch();
+  // const [tokenData, setTokenData] = useState();
+
   useEffect(() => {
     dispatch(getTokenAsync());
   }, []);
 
+  const { token } = useSelector(state => state.tokenStore);
+
   return (
-    <Router>
-      <Container fluid className={styles.mainWrapper}>
-        <Notifications />
-        <NavBar />
-        <Slider />
-        <Container className={styles.contentWrapper}>
-          <Switch>
-            <Route path="/tourdetail/:id">
-              <TourDetail />
-            </Route>
-            <Route path="/">
-              <FeatureTours />
-              <Navigation />
-              <ToursList />
-            </Route>
-          </Switch>
+    <TokenContext.Provider value={token}>
+      <Router>
+        <Container fluid className={styles.mainWrapper}>
+          <Notifications />
+          <NavBar />
+          <Slider />
+          <Container className={styles.contentWrapper}>
+            <Switch>
+              <Route path="/tourdetail/:id">
+                <TourDetail />
+              </Route>
+              <Route path="/">
+                <FeatureTours />
+                <Navigation />
+                <ToursList />
+              </Route>
+            </Switch>
+          </Container>
         </Container>
-      </Container>
-    </Router>
+      </Router>
+    </TokenContext.Provider>
   );
 }
 

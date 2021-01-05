@@ -2,13 +2,13 @@ import { getToursAsync } from '../actions/tours.actions';
 import { showAlertDanger } from '../actions/alert.actions';
 import { getCity } from '../../static_data/data';
 
-const getTours = searchCity => dispatch => {
+const getTours = (searchCity, token) => dispatch => {
   const currentLocation = searchCity.split(',');
   const city = currentLocation[0];
   const country = currentLocation[1];
   const objLocation = getCity(city, country);
   const myHeaders = new Headers();
-  const token = localStorage.getItem('token');
+  // const token = localStorage.getItem('token');
   myHeaders.append('Authorization', `Bearer ${token}`);
   let URL = '';
 

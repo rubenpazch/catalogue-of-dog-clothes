@@ -43,7 +43,7 @@
 <br/>
 
 
-Catalogue of Dog Clothes is web application desktop version to receive a list of tours from an API, this information is dinamic, we are able to filter our list by price, title or also we can use the search option to find tours for an specific city (New York, Mexico Cito, Lima, Boston), check tours details by clicking each tours. This application was build using <b> React & Redux </b> you can find the full requirements   <a href="https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32" alt="Requirements">here</a>. 
+Catalog of Dog Clothes is a web application desktop version to receive a list of tours from an API, this information is dynamic, we are able to filter our list by price, title or also we can use the search option to find tours for a specific city (New York, Mexico Cito, Lima, Boston), check tours details by clicking each tour. This application was build using <b> React & Redux </b> you can find the full requirements   <a href="https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32" alt="Requirements">here</a>. 
 
 
 
@@ -135,14 +135,16 @@ To deploy to netlify just push your changes and create a new project inside netl
 
 
 
-### Tools used on this project
 
-## Extra Feature
+
+## Optional Features
 
 + For this project it was 
 + stylelint
 + Amadeus API
-
++ React Testing Library
++ CSS modules 
++ React Hooks
 
 <br/>
 
