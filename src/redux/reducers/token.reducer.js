@@ -5,7 +5,7 @@ const initialState = {
   loading: false,
 };
 
-export default function tokenReducer(state = initialState, action) {
+const tokenReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionsTypes.FETCH_TOKEN_REQUEST:
       return {
@@ -21,4 +21,6 @@ export default function tokenReducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default tokenReducer;

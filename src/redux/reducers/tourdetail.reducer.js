@@ -5,7 +5,7 @@ const initialState = {
   loading: false,
 };
 
-export default function tourDetailReducer(state = initialState, action) {
+const tourDetailReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionsTypes.FETCH_TOUR_DETAIL_REQUEST:
       return {
@@ -21,4 +21,6 @@ export default function tourDetailReducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default tourDetailReducer;

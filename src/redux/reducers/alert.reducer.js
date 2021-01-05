@@ -6,7 +6,7 @@ const initialState = {
   show: false,
 };
 
-export default function alertReducer(state = initialState, action) {
+const alertReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionsTypes.SHOW_ALERT_ERROR:
       return {
@@ -37,4 +37,6 @@ export default function alertReducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default alertReducer;

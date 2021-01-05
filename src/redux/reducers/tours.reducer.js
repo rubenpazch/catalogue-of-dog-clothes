@@ -5,7 +5,7 @@ const initialState = {
   loading: false,
 };
 
-export default function toursReducer(state = initialState, action) {
+const toursReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionsTypes.FETCH_TOURS_REQUEST:
       return {
@@ -61,4 +61,6 @@ export default function toursReducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default toursReducer;

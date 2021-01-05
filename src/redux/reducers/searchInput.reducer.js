@@ -4,7 +4,7 @@ const initialState = {
   searchCity: '',
 };
 
-export default function searchInputReducer(state = initialState, action) {
+const searchInputReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionsTypes.FETCH_CITY:
       return {
@@ -15,4 +15,6 @@ export default function searchInputReducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default searchInputReducer;
