@@ -20,8 +20,6 @@ import TokenContext from './context/TokenContext';
 
 function App() {
   const dispatch = useDispatch();
-  // const [tokenData, setTokenData] = useState();
-
   useEffect(() => {
     dispatch(getTokenAsync());
   }, []);

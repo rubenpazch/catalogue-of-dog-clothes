@@ -8,7 +8,6 @@ const getTokenAsync = () => dispatch => {
     .then(result => {
       localStorage.setItem('token', result.access_token);
       dispatch(getToken(result));
-      // dispatch(getGetToken(result));
     })
     .catch(error => {
       dispatch(showAlertDanger(`Error calling to the API for tours: ${error}`));

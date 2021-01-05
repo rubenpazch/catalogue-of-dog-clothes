@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import Navbar from 'react-bootstrap/NavBar';
-// import Nav from 'react-bootstrap/Nav';
 import { Col, Row } from 'react-bootstrap';
 import styles from '../css/menunavbar.module.css';
 
