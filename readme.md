@@ -29,7 +29,7 @@
     <a href="https://github.com/rubenpazch/catalogue-of-dog-clothes"><strong>Explore this project »</strong></a>
     <br />
     <br />&#10023;
-    <a href="https://reverent-lamport-faa64f.netlify.app/">View Demo</a>   &#10023;  
+    <a href="https://sad-sinoussi-c7723c.netlify.app/">View Demo</a>   &#10023;  
     <a href="https://github.com/rubenpazch/catalogue-of-dog-clothes/issues">Report Bug</a>    &#10023;
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;
     <a href="#Extra-Feature">Extra Feature</a> &#10023;
@@ -152,19 +152,19 @@ To deploy to netlify just push your changes and create a new project inside netl
 
 <br/>
 
-click on the link to watch [live version](https://reverent-lamport-faa64f.netlify.app/)
+click on the link to watch [live version](https://sad-sinoussi-c7723c.netlify.app/)
 
 <br/>
 
-click on the link to watch project description [live version](https://www.loom.com/share/ccbab2e972d84a42892855e53650c7fc)
+click on the link to watch project description [video 1](https://www.loom.com/share/ccbab2e972d84a42892855e53650c7fc)
 
 <br/>
 
-click on the link to watch concepts review [live version](https://www.loom.com/share/f402f20718c54188a417df31aefac7f7)
+click on the link to watch concepts review [video 2](https://www.loom.com/share/b5519cb3979d4d67b22c8251b6edd55a)
 
 <br/>
 
-click on the link to watch software development [live version](https://www.loom.com/share/22948a50462e47b2b09a8b98b0c47cf2)
+click on the link to watch software development [video 3](https://www.loom.com/share/22948a50462e47b2b09a8b98b0c47cf2)
 
 <br/>
 
@@ -186,7 +186,7 @@ click on the link to watch software development [live version](https://www.loom.
 
 This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-Feel free to check the [issues page](https://github.com/rubenpazch/Group-our-transactions/issues).
+Feel free to check the [issues page](https://github.com/rubenpazch/catalogue-of-dog-clothes/issues).
 
 
 ## Authors
