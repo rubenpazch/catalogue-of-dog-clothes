@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`machets snapshot MenuNavBar 1`] = `
+<div
+  className="wrapper row"
+  data-testid="MenuNotificationBar"
+>
+  <div
+    className="leftwrapper col-md-2"
+  />
+  <div
+    className="midlewrapper col-md-7"
+  >
+    <ul
+      className="wrapperMenu"
+    >
+      <li
+        className="itemList"
+        href="#home"
+      >
+        <a
+          href="localhost:3000"
+        >
+          Most Populars Places
+        </a>
+      </li>
+      <li
+        className="itemList"
+        href="#features"
+      >
+        <a
+          href="localhost:3000"
+        >
+           Last Time Trip
+        </a>
+      </li>
+      <li
+        className="itemList"
+        href="#pricing"
+      >
+        <a
+          href="localhost:3000"
+        >
+          Flexible Itinerary
+        </a>
+      </li>
+      <li
+        className="itemList"
+        href="#pricing"
+      >
+        <a
+          href="localhost:3000"
+        >
+          Deals
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="rigthwrapper col-md-3"
+  >
+    <p>
+      -
+    </p>
+  </div>
+</div>
+`;

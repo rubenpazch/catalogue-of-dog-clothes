@@ -1,28 +1,33 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/NavBar';
-import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
 import styles from '../css/menunavbar.module.css';
 
 function MenuNavBar() {
   return (
-    <Row className={styles.wrapper}>
+    <Row className={styles.wrapper} data-testid="MenuNavBar">
       <Col className={styles.leftwrapper} md={2} />
       <Col className={styles.midlewrapper} md={7}>
         <ul className={styles.wrapperMenu}>
           <li href="#home" className={styles.itemList}>
-						<a  href="#">Home</a>
-					</li>
+            <NavLink to="/" activeClassName="active">Home</NavLink>
+          </li>
           <li href="#features" className={styles.itemList}>
-						<a  href="#"> Features</a>
-					</li>
+            <a href="www.google.com"> ADVENTURES</a>
+          </li>
           <li href="#pricing" className={styles.itemList}>
-            <a  href="#">Pricing</a>
+            <a href="www.google.com">MUSEUMS</a>
+          </li>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="www.google.com">LUXURY</a>
+          </li>
+          <li href="#pricing" className={styles.itemList}>
+            <a href="www.google.com">TRADITIONAL</a>
           </li>
         </ul>
       </Col>
       <Col className={styles.rigthwrapper} md={3}>
-        <p>cart</p>
+        <p>-</p>
       </Col>
     </Row>
   );
