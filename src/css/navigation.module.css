@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.titleArrows {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.filterByPrices {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.filterByTitle {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.rowFilter {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.labelStyle {
+  width: 200px;
+}
+
+.selectStyle {
+  margin-top: 7px;
+}
