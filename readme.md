@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-    <h1 align="center"> Catalogue of Dog Clothes   </h1>    
+    <h1 align="center"> e-Tours Web Application  </h1>    
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@
 <br/>
 
 
-Catalog of Dog Clothes is a web application desktop version to receive a list of tours from an API, this information is dynamic, we are able to filter our list by price, title or also we can use the search option to find tours for a specific city (New York, Mexico Cito, Lima, Boston), check tours details by clicking each tour. This application was build using <b> React & Redux </b> you can find the full requirements   <a href="https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32" alt="Requirements">here</a>. 
+e-Tours Web Application is a web application desktop version to receive a list of tours from an API, this information is dynamic, we are able to filter our list by price, title or also we can use the search option to find tours for a specific city (New York, Mexico Cito, Lima, Boston), check tours details by clicking each tour. This application was build using <b> React & Redux </b> you can find the full requirements   <a href="https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32" alt="Requirements">here</a>. 
 
 
 
